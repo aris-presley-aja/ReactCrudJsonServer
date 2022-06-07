@@ -1,0 +1,35 @@
+@import '../../styles/app';
+
+.v-app {
+    .v-list-item__content {
+      .v-list-item__title {
+        color: #f1a72c!important;
+        
+      }
+    }
+  }
+  ::v-deep .v-stepper__step__step { width: 40px; height: 40px; }
+.employee-list {
+  .v-card__title {
+    .v-input {
+      max-width: 45%;
+      @include media-breakpoint-up(md) {
+        max-width: 20%;
+      }
+    }
+  }
+
+  .v-data-table {
+    .v-text-field > .v-input__control > .v-input__slot {
+      &:after, &:before {
+        border: none !important;
+      }
+    }
+    .v-data-table__checkbox.v-simple-checkbox {
+      .v-icon.mdi-checkbox-marked {
+        color: $primary;
+      }
+    }
+  }
+}
+
